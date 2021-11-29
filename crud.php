@@ -34,7 +34,6 @@ if ($conn->connect_error) {
 
 $sql = "SELECT column1, column2, column3, column4, column5 FROM table1";
 $result = $conn->query($sql);
-//print_r($result);
 if ($result->num_rows > 0) {
   echo "<center><table border='1'><tr><th>ID</th><th>Name</th><th>Fecha</th><th>Numero</th><th>NumeroDouble</th><th>Eliminar</th><th>Modificar</th></tr>";
   // output data of each row
